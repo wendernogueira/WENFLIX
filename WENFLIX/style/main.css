@@ -1,0 +1,108 @@
+/**Criando variaveis**/
+
+:root{
+   --vermelho:#e50914;
+   --preto:#141414;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/** Elementos Base **/
+body{
+ background: var(--preto);
+ font-family: 'Times New Roman', Times, serif;
+ color: #fff;
+
+}
+
+header .container{
+    display: flex;
+    /** Flex-direction já vem com o padrão row **/
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+   
+
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black',times;
+    font-size: 40px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+/** Para ter algum movimento quando o mouse passa por cima usar o hover(flutuar)  **/
+header nav a:hover{
+    color: rgb(255, 255, 255) ;
+
+}
+   
+/** ELemento do Titulo**/
+.filme-principal{
+  font-size: 16px ;
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%),  url(/img/capa.jpg)
+  height: 400px;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: flex-start;
+
+}
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Classe botao*/
+.botao{
+ background-color: rgba(0,0,0,.50);
+ border: none;
+ color: #fff;
+
+/*padding são quatro valores px o primeiro é de cima e o segundo dos lados exemplo 15px, 30px*/
+ padding: 15px 30px;
+ margin-right: 20px;
+ font-size: 12px;
+
+ cursor: pointer;
+ transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+    
+}
+.filme-principal .container{
+  width: 600px;
+}
+.box-filme{
+    height: 300px;
+    width: 100px;
+    display: block;
+}
+
+.carrosel.filmes{
+margin-top: 5px;
+
+}
